@@ -17,7 +17,7 @@ def index():
         sentiment = sent_pipeline(text)[0]
     
     # Render the template and pass the sentiment result (if any)
-    return render_template('index.html', sentiment=sentiment)
+    return render_template('index.html', sentiment=sentiment, pagetitle="home page", custom_css="main")
 
 if __name__ == '__main__':
     app.run(debug=True)
