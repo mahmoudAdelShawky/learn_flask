@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pagetitle }}</title>
+    {% if stylecss %}
+    <!-- <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='css/' + {{stylecss}} "> -->
+    {% endif %}
+    <!-- <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='css/{{{style}}}')}"> -->
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
