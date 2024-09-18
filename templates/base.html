@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ pagetitle }}</title>
-    {% if stylecss %}
-    <!-- <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='css/' + {{stylecss}} "> -->
-    {% endif %}
-    <!-- <link rel="stylesheet"  type="text/css" href="{{url_for('static', filename='css/{{{style}}}')}"> -->
+    <link rel="stylesheet" href="{{url_for('static', filename= 'css/' + custom_css + '.css')}}">
+    <!-- <link rel="stylesheet" href="static/css/main.css"> -->
 </head>
 <body>
     {% block body %}
